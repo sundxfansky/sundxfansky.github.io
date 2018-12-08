@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tonser&#39;s blog</title>
-    <link>http://sundxfansky.club/categories/</link>
+    <link>http://www.sundxfansky.club/categories/</link>
     <description>Recent content in Categories on Tonser&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="http://sundxfansky.club/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.sundxfansky.club/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python</title>
-      <link>http://sundxfansky.club/categories/python/</link>
+      <link>http://www.sundxfansky.club/categories/python/</link>
       <pubDate>Thu, 13 Sep 2018 16:14:53 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/python/</guid>
+      <guid>http://www.sundxfansky.club/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uav_lab</title>
-      <link>http://sundxfansky.club/categories/uav_lab/</link>
-      <pubDate>Sat, 08 Dec 2018 23:58:14 +0800</pubDate>
+      <link>http://www.sundxfansky.club/categories/uav_lab/</link>
+      <pubDate>Sat, 22 Sep 2018 21:13:34 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/uav_lab/</guid>
+      <guid>http://www.sundxfansky.club/categories/uav_lab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>http://sundxfansky.club/categories/ubuntu/</link>
-      <pubDate>Sat, 08 Dec 2018 23:58:14 +0800</pubDate>
+      <link>http://www.sundxfansky.club/categories/ubuntu/</link>
+      <pubDate>Sat, 22 Sep 2018 21:13:34 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/ubuntu/</guid>
+      <guid>http://www.sundxfansky.club/categories/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>思考</title>
-      <link>http://sundxfansky.club/categories/%E6%80%9D%E8%80%83/</link>
+      <link>http://www.sundxfansky.club/categories/%E6%80%9D%E8%80%83/</link>
       <pubDate>Wed, 29 Aug 2018 22:54:54 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/%E6%80%9D%E8%80%83/</guid>
+      <guid>http://www.sundxfansky.club/categories/%E6%80%9D%E8%80%83/</guid>
       <description></description>
     </item>
     
     <item>
       <title>爬虫</title>
-      <link>http://sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</link>
+      <link>http://www.sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</link>
       <pubDate>Thu, 13 Sep 2018 16:14:53 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</guid>
+      <guid>http://www.sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>课余</title>
-      <link>http://sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</link>
+      <link>http://www.sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</link>
       <pubDate>Thu, 13 Sep 2018 16:14:53 +0800</pubDate>
       
-      <guid>http://sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</guid>
+      <guid>http://www.sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</guid>
       <description></description>
     </item>
     

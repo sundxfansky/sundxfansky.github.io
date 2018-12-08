@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Scrapy的Debug方法 - Tonser&#39;s blog</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Tonser" />
+  <meta name="description" content="在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：
+使用main函数调试 Scrapy是一个框架，启动爬虫的时候需要在命令行下启动，输入scrapy crawl project_name我们可以写一个函数实现整个过程，用来进行debug非常方便：
+" />
+
+  <meta name="keywords" content="Tonser, blog, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.52" />
+
+
+<link rel="canonical" href="sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/" />
+
+
+
+<link rel="icon" href="/sundxfansky.club/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/sundxfansky.club/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Scrapy的Debug方法" />
+<meta property="og:description" content="在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：
+
+使用main函数调试
+
+Scrapy是一个框架，启动爬虫的时候需要在命令行下启动，输入scrapy crawl project_name我们可以写一个函数实现整个过程，用来进行debug非常方便：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/" /><meta property="article:published_time" content="2018-09-13T16:14:53&#43;08:00"/>
+<meta property="article:modified_time" content="2018-09-15T14:03:43&#43;08:00"/>
+
+<meta itemprop="name" content="Scrapy的Debug方法">
+<meta itemprop="description" content="在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：
+
+使用main函数调试
+
+Scrapy是一个框架，启动爬虫的时候需要在命令行下启动，输入scrapy crawl project_name我们可以写一个函数实现整个过程，用来进行debug非常方便：">
+
+
+<meta itemprop="datePublished" content="2018-09-13T16:14:53&#43;08:00" />
+<meta itemprop="dateModified" content="2018-09-15T14:03:43&#43;08:00" />
+<meta itemprop="wordCount" content="553">
+
+
+
+<meta itemprop="keywords" content="scrapy,Debug," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scrapy的Debug方法"/>
+<meta name="twitter:description" content="在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：
+
+使用main函数调试
+
+Scrapy是一个框架，启动爬虫的时候需要在命令行下启动，输入scrapy crawl project_name我们可以写一个函数实现整个过程，用来进行debug非常方便："/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/sundxfansky.club/" class="logo">细嗅蔷薇</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/post/">文章</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/categories/">分类</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/about/">关于</a>
+          
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/sundxfansky.club/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/sundxfansky.club/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/sundxfansky.club/" class="logo">
+    
+      细嗅蔷薇
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/">主页</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/post/">文章</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="sundxfansky.club/sundxfansky.club/about/">关于</a>
+          
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Scrapy的Debug方法</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 2018-09-13 </span>
+        <div class="post-category">
+            <a href="sundxfansky.club/categories/python/"> python </a>
+            <a href="sundxfansky.club/categories/%E7%88%AC%E8%99%AB/"> 爬虫 </a>
+            <a href="sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/"> 课余 </a>
+            
+          </div>
+        <span class="more-meta"> 约 553 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#使用main函数调试">使用main函数调试</a></li>
+<li><a href="#pycharm断点调试">pycharm断点调试</a></li>
+<li><a href="#数据库入库之前的调试问题">数据库入库之前的调试问题</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：</p>
+
+<h1 id="使用main函数调试">使用main函数调试</h1>
+
+<p>Scrapy是一个框架，启动爬虫的时候需要在命令行下启动，输入<code>scrapy crawl project_name</code>我们可以写一个函数实现整个过程，用来进行debug非常方便：</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding:utf-8 -*-</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&#34;sundxfansky@sjtu.edu.cn&#34;</span>
+
+<span class="kn">from</span> <span class="nn">scrapy.cmdline</span> <span class="kn">import</span> <span class="n">execute</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1">#下面的路径可以满足，但是需要重新修改</span>
+<span class="c1">#sys.path.append(&#34;/Users/sundx/Documents/learn_code/article_spider&#34;)</span>
+
+<span class="c1">#获取当前目录的父目录</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+<span class="n">execute</span><span class="p">([</span><span class="s2">&#34;scrapy&#34;</span><span class="p">,</span> <span class="s2">&#34;crawl&#34;</span><span class="p">,</span> <span class="s2">&#34;jobbole&#34;</span><span class="p">])</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>利用scrapy.cmdline中的execute函数表示执行终端下的命令。
+<code>os.path.abspath(__file__)</code>表示当前文件的目录。<code>os.path.dirname(dir)</code>表示<code>dir</code>目录的母目录
+<code>sys.path.append(dir)</code>表示将当前sys的路径设置在<code>dir</code>下，从而可以执行<code>execute</code>命令。</p>
+
+<h1 id="pycharm断点调试">pycharm断点调试</h1>
+
+<p>在文件中加入断点时执行debug会有两种方法进行，F6单步调试，与F8进行下一步调试，注意观察debug信息与variables，后期会在本文中加入常见的debug信息错误与对应的错误类型</p>
+
+<h1 id="数据库入库之前的调试问题">数据库入库之前的调试问题</h1>
+
+<p>在数据库入库之前的命令中加入一个断点，便于准确的跟踪数据入库的错误，及时发现。</p>
+
+<p>&mdash;&mdash;-后续再进行补充&mdash;&mdash;&mdash;</p>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Tonser</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-09-15</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="sundxfansky.club/tags/scrapy/">scrapy</a>
+          <a href="sundxfansky.club/tags/debug/">Debug</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="sundxfansky.club/post/uav_lab/raspberry_pi/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">树莓派安装ubuntu-server系统后安装图像化界面的问题</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/">
+            <span class="next-text nav-default">Scrapy爬取图片与记录路径</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "sundxfansky/comments_blog"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:sundxfansky@sjtu.edu.cn" rel="me noopener" class="iconfont icon-email"
+        title="email" target="_blank">
+      </a>
+      <a href="https://github.com/sundxfansky" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="sundxfansky.club/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2017 -
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Tonser
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/sundxfansky.club/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/sundxfansky.club/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/sundxfansky.club/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/sundxfansky.club/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/sundxfansky.club/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/sundxfansky.club/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

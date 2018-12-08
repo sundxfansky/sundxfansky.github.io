@@ -3,6 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+<<<<<<< HEAD
     <loc>sundxfansky.club/post/uav_lab/test/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,6 +11,8 @@
   </url>
   
   <url>
+=======
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <loc>sundxfansky.club/post/uav_lab/raspberry_pi/</loc>
     <lastmod>2018-09-22T21:13:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,7 +76,11 @@
   
   <url>
     <loc>sundxfansky.club/tags/debug/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -94,7 +101,11 @@
   
   <url>
     <loc>sundxfansky.club/post/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -108,7 +119,11 @@
   
   <url>
     <loc>sundxfansky.club/tags/raspberry_pi/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -122,28 +137,44 @@
   
   <url>
     <loc>sundxfansky.club/tags/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>sundxfansky.club/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>sundxfansky.club/categories/uav_lab/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>sundxfansky.club/categories/ubuntu/</loc>
+<<<<<<< HEAD
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
+=======
+    <lastmod>2018-09-22T21:13:34+08:00</lastmod>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

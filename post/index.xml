@@ -57,7 +57,12 @@
       <pubDate>Sat, 01 Sep 2018 23:33:21 +0800</pubDate>
       
       <guid>sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</guid>
+<<<<<<< HEAD
       <description>&lt;p&gt;使用虚拟环境的好处是不会影响系统的环境，可以每开发一个python项目就使用一个虚拟环境，方便管理包，也避免了无用的包。&lt;/p&gt;</description>
+=======
+      <description>&lt;p&gt;使用虚拟环境的好处是不会影响系统的环境，可以每开发一个python项目就使用一个虚拟环境，方便管理包，也避免了无用的包。
+&lt;/p&gt;</description>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     </item>
     
     <item>
@@ -66,7 +71,12 @@
       <pubDate>Sat, 01 Sep 2018 00:13:23 +0800</pubDate>
       
       <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</guid>
+<<<<<<< HEAD
       <description>&lt;p&gt;使用scrapy爬虫时可能会遇到服务器检测爬虫客户端的headers中user-agent，当被检测到同一个IP地址同一个user-agent有类似爬虫的行为时，服务器会对访问作出一些限制，用来保护正常访问的用户，这无疑对爬虫用户不太友好，本文介绍如何使用user-agent代理池破除这一限制。&lt;/p&gt;</description>
+=======
+      <description>&lt;p&gt;使用scrapy爬虫时可能会遇到服务器检测爬虫客户端的headers中user-agent，当被检测到同一个IP地址同一个user-agent有类似爬虫的行为时，服务器会对访问作出一些限制，用来保护正常访问的用户，这无疑对爬虫用户不太友好，本文介绍如何使用user-agent代理池破除这一限制。
+&lt;/p&gt;</description>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     </item>
     
     <item>
@@ -75,7 +85,13 @@
       <pubDate>Thu, 30 Aug 2018 20:24:09 +0800</pubDate>
       
       <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</guid>
+<<<<<<< HEAD
       <description>&lt;p&gt;使用scarpy构建自己的爬虫系统非常简单，本文给出了两种在爬取数据后将数据保存到数据库的方法.&lt;/p&gt;</description>
+=======
+      <description>&lt;p&gt;使用scarpy构建自己的爬虫系统非常简单，本文给出了两种在爬取数据后将数据保存到数据库的方法.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+>>>>>>> parent of 1417519... update hugo file  Sun Sep 23 11:40:01 CST 2018
     </item>
     
     <item>

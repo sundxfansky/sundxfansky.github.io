@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tonser&#39;s blog</title>
-    <link>sundxfansky.club/</link>
+    <link>https://www.sundxfansky.club/</link>
     <description>Recent content on Tonser&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 08 Dec 2018 23:58:14 +0800</lastBuildDate>
     
-        <atom:link href="sundxfansky.club/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.sundxfansky.club/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>“Test&#34;</title>
-      <link>sundxfansky.club/post/uav_lab/test/</link>
+      <link>https://www.sundxfansky.club/post/uav_lab/test/</link>
       <pubDate>Sat, 08 Dec 2018 23:58:14 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/uav_lab/test/</guid>
+      <guid>https://www.sundxfansky.club/post/uav_lab/test/</guid>
       
         <description>
 
@@ -33,10 +33,10 @@
     
     <item>
       <title>树莓派安装ubuntu-server系统后安装图像化界面的问题</title>
-      <link>sundxfansky.club/post/uav_lab/raspberry_pi/</link>
+      <link>https://www.sundxfansky.club/post/uav_lab/raspberry_pi/</link>
       <pubDate>Sat, 22 Sep 2018 21:13:34 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/uav_lab/raspberry_pi/</guid>
+      <guid>https://www.sundxfansky.club/post/uav_lab/raspberry_pi/</guid>
       
         <description>
 
@@ -53,10 +53,10 @@
     
     <item>
       <title>Scrapy的Debug方法</title>
-      <link>sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</link>
+      <link>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</link>
       <pubDate>Thu, 13 Sep 2018 16:14:53 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</guid>
+      <guid>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</guid>
       
         <description>&lt;p&gt;在使用scrapy的过程中要注重调试技巧，使用下面的方法可以提升debug的效率：&lt;/p&gt;
 
@@ -116,10 +116,10 @@
     
     <item>
       <title>Scrapy爬取图片与记录路径</title>
-      <link>sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</link>
+      <link>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</link>
       <pubDate>Tue, 04 Sep 2018 18:33:53 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</guid>
+      <guid>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</guid>
       
         <description>&lt;p&gt;我们利用scrapy提供的默认的下载图片的pipline来完成利用scrapy爬取图片在&lt;code&gt;scrapy.pipelines.images.ImagesPipeline&lt;/code&gt;文件中给出了scrapy默认爬取图片的设置，我们只需进行自己单独的设置：&lt;/p&gt;
 
@@ -197,10 +197,10 @@
     
     <item>
       <title>Mac下使用virtualenv搭建python的虚拟环境</title>
-      <link>sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</link>
+      <link>https://www.sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</link>
       <pubDate>Sat, 01 Sep 2018 23:33:21 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</guid>
+      <guid>https://www.sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</guid>
       
         <description>&lt;p&gt;使用虚拟环境的好处是不会影响系统的环境，可以每开发一个python项目就使用一个虚拟环境，方便管理包，也避免了无用的包。&lt;/p&gt;
 
@@ -259,23 +259,23 @@ source &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;之后在该环境下安装使用包不会影响系统python或者其他python环境的包，非常方便。&lt;/p&gt;
 
 &lt;p&gt;在scrapy开发的时候可以使用这种方法，在pycharm的设置中需要在如图设置：
-&lt;img src=&#34;sundxfansky.club/image/pycharm_settings.png&#34; alt=&#34;pycharm设置&#34; /&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;https://www.sundxfansky.club/image/pycharm_settings.png&#34; alt=&#34;pycharm设置&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>使用Middleware设置scrapy的User-Agent代理池</title>
-      <link>sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</link>
+      <link>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</link>
       <pubDate>Sat, 01 Sep 2018 00:13:23 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</guid>
+      <guid>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</guid>
       
         <description>&lt;p&gt;使用scrapy爬虫时可能会遇到服务器检测爬虫客户端的headers中user-agent，当被检测到同一个IP地址同一个user-agent有类似爬虫的行为时，服务器会对访问作出一些限制，用来保护正常访问的用户，这无疑对爬虫用户不太友好，本文介绍如何使用user-agent代理池破除这一限制。&lt;/p&gt;
 
 &lt;h2 id=&#34;downloadermiddleware-下载器中间件-的使用&#34;&gt;DownloaderMiddleware（下载器中间件） 的使用&lt;/h2&gt;
 
 &lt;p&gt;首先先了解一下scrapy的框架，如图：
-&lt;img src=&#34;sundxfansky.club/image/scrapy_architecture_02.png&#34; alt=&#34;架构图&#34; /&gt;
+&lt;img src=&#34;https://www.sundxfansky.club/image/scrapy_architecture_02.png&#34; alt=&#34;架构图&#34; /&gt;
 关于详细的解释后面会专门写一个文章来写，在图中蓝色的方块就是middleware，从图中可以看出有两个middleware，分别是spider和Downloader两个，对于Downloaded的middleware，也就是对scrapy的engine发出的request请求，做一个预处理从而发给服务器去请求html。有关更详细的关于DownloaderMiddleware的描述可以&lt;a href=&#34;https://docs.scrapy.org/en/latest/topics/downloader-middleware.html&#34;&gt;点击官网&lt;/a&gt;查看。&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -469,10 +469,10 @@ source &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
     
     <item>
       <title>Scrapy爬取数据保存mysql的方法</title>
-      <link>sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</link>
+      <link>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</link>
       <pubDate>Thu, 30 Aug 2018 20:24:09 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</guid>
+      <guid>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</guid>
       
         <description>&lt;p&gt;使用scarpy构建自己的爬虫系统非常简单，本文给出了两种在爬取数据后将数据保存到数据库的方法.&lt;/p&gt;
 
@@ -662,10 +662,10 @@ source &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
     
     <item>
       <title>短评--互联网大数据分析用户情感？</title>
-      <link>sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</link>
+      <link>https://www.sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</link>
       <pubDate>Wed, 29 Aug 2018 22:54:54 +0800</pubDate>
       
-      <guid>sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</guid>
+      <guid>https://www.sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</guid>
       
         <description>
 
@@ -692,14 +692,14 @@ source &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
     
     <item>
       <title>关于Tonser&#39;s blog</title>
-      <link>sundxfansky.club/about/</link>
+      <link>https://www.sundxfansky.club/about/</link>
       <pubDate>Wed, 29 Aug 2018 11:29:00 +0800</pubDate>
       
-      <guid>sundxfansky.club/about/</guid>
+      <guid>https://www.sundxfansky.club/about/</guid>
       
         <description>
 
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;sundxfansky.club/image/sundx.jpg&#34; alt=&#34;图书馆毕业照&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://www.sundxfansky.club/image/sundx.jpg&#34; alt=&#34;图书馆毕业照&#34; /&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;2018年7月12日上海交通大学举办了本科生毕业典礼&#34;&gt;2018年7月12日上海交通大学举办了本科生毕业典礼&lt;/h2&gt;
 

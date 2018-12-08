@@ -1,183 +1,183 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="sundxfansky.club/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.sundxfansky.club/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>sundxfansky.club/post/uav_lab/test/</loc>
+    <loc>https://www.sundxfansky.club/post/uav_lab/test/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/uav_lab/raspberry_pi/</loc>
+    <loc>https://www.sundxfansky.club/post/uav_lab/raspberry_pi/</loc>
     <lastmod>2018-09-22T21:13:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</loc>
+    <loc>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_debug/</loc>
     <lastmod>2018-09-15T14:03:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</loc>
+    <loc>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_download_img/</loc>
     <lastmod>2018-09-04T18:33:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</loc>
+    <loc>https://www.sundxfansky.club/post/scrapy_crawl_skills/virturalenv_skills/</loc>
     <lastmod>2018-09-01T23:33:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</loc>
+    <loc>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_user_agent/</loc>
     <lastmod>2018-09-01T00:13:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</loc>
+    <loc>https://www.sundxfansky.club/post/scrapy_crawl_skills/scrapy_data_to_mysql/</loc>
     <lastmod>2018-08-30T20:24:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</loc>
+    <loc>https://www.sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</loc>
     <lastmod>2018-08-29T22:54:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/about/</loc>
+    <loc>https://www.sundxfansky.club/about/</loc>
     <lastmod>2018-08-29T11:29:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/</loc>
+    <loc>https://www.sundxfansky.club/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/debug/</loc>
+    <loc>https://www.sundxfansky.club/tags/debug/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/image/</loc>
+    <loc>https://www.sundxfansky.club/tags/image/</loc>
     <lastmod>2018-09-04T18:33:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/mysql/</loc>
+    <loc>https://www.sundxfansky.club/tags/mysql/</loc>
     <lastmod>2018-09-01T00:13:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/post/</loc>
+    <loc>https://www.sundxfansky.club/post/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/python/</loc>
+    <loc>https://www.sundxfansky.club/categories/python/</loc>
     <lastmod>2018-09-15T14:03:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/raspberry_pi/</loc>
+    <loc>https://www.sundxfansky.club/tags/raspberry_pi/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/scrapy/</loc>
+    <loc>https://www.sundxfansky.club/tags/scrapy/</loc>
     <lastmod>2018-09-15T14:03:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/</loc>
+    <loc>https://www.sundxfansky.club/tags/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/</loc>
+    <loc>https://www.sundxfansky.club/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/uav_lab/</loc>
+    <loc>https://www.sundxfansky.club/categories/uav_lab/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/ubuntu/</loc>
+    <loc>https://www.sundxfansky.club/categories/ubuntu/</loc>
     <lastmod>2018-12-08T23:58:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/%E6%80%9D%E8%80%83/</loc>
+    <loc>https://www.sundxfansky.club/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2018-08-29T22:54:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://www.sundxfansky.club/categories/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2018-09-15T14:03:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/%E7%9F%AD%E8%AF%84/</loc>
+    <loc>https://www.sundxfansky.club/tags/%E7%9F%AD%E8%AF%84/</loc>
     <lastmod>2018-08-29T22:54:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/tags/%E7%A1%85%E8%B0%B7%E6%9D%A5%E4%BF%A1/</loc>
+    <loc>https://www.sundxfansky.club/tags/%E7%A1%85%E8%B0%B7%E6%9D%A5%E4%BF%A1/</loc>
     <lastmod>2018-08-29T22:54:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</loc>
+    <loc>https://www.sundxfansky.club/categories/%E8%AF%BE%E4%BD%99/</loc>
     <lastmod>2018-09-15T14:03:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

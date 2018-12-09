@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.sundxfansky.club/sitemap.xml
+Sitemap: https://sundxfansky.github.io/sitemap.xml

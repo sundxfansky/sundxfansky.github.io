@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Tonser&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Mar 2019 01:37:53 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 22:57:16 +0800</lastBuildDate>
     
 	<atom:link href="https://sundxfansky.club/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python技巧整理2</title>
+      <link>https://sundxfansky.club/post/machine_vision/python%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 02 Apr 2019 22:57:16 +0800</pubDate>
+      
+      <guid>https://sundxfansky.club/post/machine_vision/python%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;继续梳理python的编程技巧
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>学习opencv过程中python的梳理</title>
@@ -124,6 +134,15 @@
       
       <guid>https://sundxfansky.club/post/comments_of_sillicon_valley_letters/letter3/</guid>
       <description>会被左右的问卷 文中提出了一个很有意思的例子作为佐证，当一个人做了一件错事，比如前几天滴滴顺风车司机的恶劣行为，调查问卷像这样问你的时候： 如果</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sundxfansky.club/post/uav_lab/px4_flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sundxfansky.club/post/uav_lab/px4_flow/</guid>
+      <description>PX4基本框架介绍与光流模块开发 框架介绍 编译脚本修改内容 增加modules Mavlink自定义消息 数传通信频率提升</description>
     </item>
     
   </channel>
